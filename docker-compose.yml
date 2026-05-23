@@ -1,0 +1,31 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        - DEV=${DEV}
+    ports:
+      - "${API_PORT}:8000"
+    volumes:
+      - ./ecommerce_api:/app
+    env_file:
+      - ./env/api.env
+    command: >
+      sh -c "python manage.py wait_for_db &&
+             python manage.py makemigrations &&
+             python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:${TAG_DB}
+    volumes:
+      - dev-db-data:/var/lib/postgresql
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
+volumes:
+  dev-db-data:
