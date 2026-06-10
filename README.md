@@ -93,6 +93,7 @@ The easiest way to run this project is using Docker.
    ```
 
 6. **Open the server**
+
    open "http://127.0.0.1:8000/api/docs/" in a web browser.
 
    Note: the url is based on environment variables ALLOWED_HOSTS in env/api.env file and API_PORT in .env file.
