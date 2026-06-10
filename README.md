@@ -1,9 +1,9 @@
 # 🛒 E-Commerce API
 
-![Python](https://img.shields.io/badge/Python-3.12-blue.svg) (https://www.python.org/)
-![Django](https://img.shields.io/badge/Django-6.x-green.svg) (https://www.djangoproject.com/)
-![DRF](https://img.shields.io/badge/Django_REST_Framework-3.x-red.svg) (https://www.django-rest-framework.org/)
-![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED.svg) (https://www.docker.com/)
+![Python](https://img.shields.io/badge/Python-3.12-blue.svg)
+![Django](https://img.shields.io/badge/Django-6.x-green.svg)
+![DRF](https://img.shields.io/badge/Django_REST_Framework-3.x-red.svg)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED.svg)
 
 A robust, scalable, and fully containerized RESTful API designed to power modern e-commerce platforms. Built with **Django** and **Django REST Framework (DRF)**, this backend handles everything from user authentication and product catalog management to shopping cart operations.
 
